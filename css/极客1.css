@@ -1,0 +1,164 @@
+/*公共样式*/
+*{margin: 0;  padding: 0;}
+body{background-color: #f4f4f4;;}
+/*公共宽度*/
+.comwidth{width: 1002px; margin: 0 auto;}
+ul{list-style: none;}
+a{text-decoration: none; color:#555555;}
+
+
+/*头部*/
+.head{width: 100%;height:70px;background: white;}
+.nav{width: 1002px;height: 70px;}
+.menu{margin-left: 20px;}
+.menu .list li{float: left;position: relative;}
+.list li>a{padding: 0 10px;line-height: 40px; display: block;color:#555555;font-size: 16px;}
+.list li:hover>a{/*background: #aaa;*/color:#35b558;}
+/*.list li:hover .down{display: block;}*//*鼠标划过时,由原来的隐藏,变为显示,用js不需要*/
+.list li .down{width: 150px;position: absolute;left: 0;top: 40px;display: none; background: white;z-index: 999;}
+.down a{line-height: 30px;display: block;font-size: 13px;padding-left: 10px;}
+.down a:hover{color:#35b558;}
+.fl{float: left;}
+.fr{float: right;}
+.menu{padding-top: 10px;padding-bottom: 10px;}/*没有做到菜单居中,自己随便写的像素*/
+.menu-two{background:#fafafa; font-size: 13px;color:#b9b9b9;}
+
+input{outline: none;}/*去除点击出现的蓝色边框*/
+
+.nav-ringht .search-box{position: relative;padding-top:15px;padding-right: 80px;}
+.nav-ringht .search-box .btn{border: 1px solid darkgray;top: 15px;left: 194px;position: absolute;cursor: pointer;}
+.nav-ringht .others{padding-top: 15px;}
+.nav-ringht .others a{display: block;padding-right: 10px;}
+.nav-ringht .others a:hover{color: #35b558;}
+
+
+/*轮播图*/
+.content-1-lunbo{width:1306px; height: 362px;margin:0 auto; position: relative;z-index: 3;}
+.content-1-lunbo .img li{position: absolute;left: 0;top: 0;display: none;}
+.content-1-lunbo .num{position: absolute; left:2px;bottom: 28px;text-align: center;width: 100%;}
+.num li{width: 30px;height: 4px;display: inline-block;background: white;
+        text-align: center;font-size: 16px;margin: 0px 2px; cursor: pointer;}
+.content-1-lunbo .num li.active{background:grey;}
+.content-1-lunbo .btn{position: absolute; width:30px; height: 60px; background-color: gainsboro; color: white; top:50%; margin-top: -30px;line-height: 60px; font-size: 40px;text-align: center;display: none; cursor: pointer;}
+.content-1-lunbo:hover .btn{display: block;}
+.content-1-lunbo .btn:hover{background-color: gray;}
+.content-1-lunbo .left{left: 0;}
+.content-1-lunbo .right{right: 0;}
+
+/*content-1-*/
+.content-1-{width: 1002px;margin: 0 auto;}
+
+/*导航菜单*/
+.content-1  .content-1- .fl{float: left;}
+.topmenu{display: block;width: 214px;height:362px;background: black;;z-index: 100;position: absolute;margin-top:-363px;}
+.topmenu .first{background-image:url(../img/导航菜单小截图/箭头.jpg);background-repeat: no-repeat;background-position: 75% center;}
+.topmenu .first>a{display: block;height: 46px;line-height:46px;padding-left:21px;color: white;}
+.topmenu .first:hover>a{background: white;color: #555555;}
+/*.topmenu li a>span{border-bottom: 1px solid white;padding-bottom: 15px;}设置字体下划线间距*/
+.topmenu .first .borderLength:after{content: "";display: block;
+                                left:21px;bottom: 0;top:auto;width: 168px;border-bottom: 1px solid white;}
+ .topmenu .first>a>span{width: 15px;height: 15px;padding-right:3px;}                              
+.submenu{left: 212px;top:0;position: absolute;display: none;width: 794px;height: 561px;background: white;}
+.submenu a{color: #555555;padding-left: 22px;}
+.topmenu .first:hover .submenu{display: block;}
+.leftdiv{float: left;width: 700px;margin-right: 5px;}
+.leftdiv ul .one{background: gray;color: white;}
+.leftdiv ul .one:after{content: "";display: block;
+                        bottom: 0;top:auto;width: 690px;border-bottom: 1px solid gray;}
+.leftdiv ul .two{background: #35b558;color: white;}
+.leftdiv ul .two:after{content: "";display: block;
+                        bottom: 0;top:auto;width: 690px;border-bottom: 1px solid #35b558;}
+.leftdiv dl{display: block;border-bottom: 1px solid gainsboro;padding-bottom:10px;overflow: hidden;}
+.leftdiv dl a:hover{color: #35b558;}
+.leftdiv dl dt{display: block;float: left;text-align: left;height: 45px;line-height: 45px;}
+.leftdiv dl dd{display: block;}
+.leftdiv dl dd a{display: block;float: left;border-left: 1px solid gainsboro;overflow: hidden;height: 21px;line-height: 21px;
+                padding: 0 10px;margin: 12px 0;font-size: 12px;}
+.rightdiv{float: right;width: 89px;}
+.rightdiv .rightimg{position:absolute; right:-105px;top:10px;}
+
+/*导航菜单右边小边框*/
+.content-1 .content-1-  .fr{float: right;}
+.content-1-rightdiv{width: 214px;height: 304px;background:white;position: absolute;left:964px;top:100px;z-index: 80;}
+.content-1-rightdiv table caption{color: #517896;}
+.content-1-rightdiv table a{font-size: 12px;text-decoration: none;text-align: left;color: #555555;}
+.content-1-rightdiv table a:hover{color: #35b558;}
+
+.content-1-rightdiv .search_box input{outline: none;}/*去除点击出现的蓝色边框*/
+.content-1-rightdiv .search_box{padding: 0 15px;position: relative;}
+.content-1-rightdiv .search_box .btn{position:absolute;top: 0;left:144px;background:white;color: #35b558;border: 1px solid darkgray;
+                             cursor: pointer;width: 50px;height:31px ;line-height: 33px;text-align: center;}
+.content-1-rightdiv .search_box .btn:hover{background: #35b558;color: white;cursor: pointer;}
+
+/*content-2*/
+.content-2{  height:124px;padding-top: 20px;}
+.content-2 li{float: left;padding-right: 5px;height: 119px;}
+
+/*content-3*/
+.content-3{height: 310px;}
+.content-3 .content-3-content{padding-top: 25px;padding-bottom: 25px;}
+.content-3 li{float: left;padding-right: 13px;height: 240px;}
+
+/*content-4*/
+.content-4{height: 382px;}
+.content-4 .content-4-content{padding-top: 25px;padding-bottom: 40px;}
+.content-4-content fl{float: left;}
+.content-4-content fr{float: right;}
+.content-4-content a{font-size:12px ;}
+.content-4-content a:hover{color:#35b558 ;}
+.content-4 li{float: left;padding-right:7px; padding-bottom:13px;height:149px;}
+.content-4 li:hover{ box-shadow:0 0 8px darkgray;}
+
+/*content-5*/
+.content-5{ height: 284px;}
+.content-5 .content-5-content{padding-top: 25px;padding-bottom: 40px;}
+.content-5-content fl{float: left;}
+.content-5-content fr{float: right;}
+.content-5-content a{font-size:12px ;}
+.content-5-content a:hover{color:#35b558 ;}
+.content-5 li{float: left;padding-right:6px; padding-bottom:13px;height:131px;}
+.content-5 li:hover{ box-shadow: 0 0 8px darkgray;}
+
+
+/*content-6*/
+.content-6{padding-top: 35px;height: 201px;}
+.content-6 li{float: left;padding-right: 7px;}
+.content-6 li:hover{ box-shadow: 0 0 8px darkgray;}
+
+/*footer-content*/
+.footer{height:155px;width:100%;margin-top:230px;background: white;}
+.footer .footer-content1{padding-top: 64px;padding-left: 430px;}
+.footer .footer-content1 a{display: block;float:right;border-left: 1px solid gainsboro;overflow: hidden;height: 21px;line-height: 21px;
+                padding: 0 10px;margin: 10px 0;font-size: 12px;}
+.footer .footer-content1 li{float: left;}
+.footer .footer-content1 a:hover{color:#35b558;}
+.footer-content2 p{font-size: 12px;text-align: center;color: #a9a9a9;padding-top: 15px;}
+
+
+/*回顶,电话,微信*/
+.box ul{left: 50%;bottom: 70px;position: fixed;margin-left: 520px;}
+.box .box-1{position: relative;display: block;}
+.box .box-1-{position: absolute;left:-120px;top: 0;background: white;width: 128px;height: 50px;display: none;}
+.box .box-1-1{font-size: 16px;font-weight:bold;text-align: center;}
+.box .box-1-2{font-size: 12px;text-align: center;}
+.box .box-1:hover .box-1-{display: block;}
+
+.box .box-2{position: relative;display: block;}
+.box .box-2-{position: absolute;left: -150px;top:-39px;bottom: 280px;display: none;}
+.box .box-2:hover .box-2-{display: block;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
