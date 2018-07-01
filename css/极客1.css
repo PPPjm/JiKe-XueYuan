@@ -75,7 +75,7 @@ input{outline: none;}/*去除点击出现的蓝色边框*/
 .leftdiv dl dd a{display: block;float: left;border-left: 1px solid gainsboro;overflow: hidden;height: 21px;line-height: 21px;
                 padding: 0 10px;margin: 12px 0;font-size: 12px;}
 .rightdiv{float: right;width: 89px;}
-.rightdiv .rightimg{position:absolute; right:-105px;top:10px;}
+.rightdiv .rightimg{position:absolute; right:-120px;top:10px;}
 
 /*导航菜单右边小边框*/
 .content-1 .content-1-  .fr{float: right;}
