@@ -1,3 +1,11 @@
+document.onreadystatechange=function(){
+				if(document.readyState=="complete"){
+					$(".loading").fadeOut();
+				}
+			}
+
+
+
 $(document).ready(function(){
 //	菜单
 	$(".nav .list li").hover(function(){
